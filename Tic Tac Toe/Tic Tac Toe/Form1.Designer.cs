@@ -28,138 +28,150 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
+            this.A2 = new System.Windows.Forms.Button();
+            this.B2 = new System.Windows.Forms.Button();
+            this.C2 = new System.Windows.Forms.Button();
+            this.A1 = new System.Windows.Forms.Button();
+            this.B1 = new System.Windows.Forms.Button();
+            this.C1 = new System.Windows.Forms.Button();
+            this.B0 = new System.Windows.Forms.Button();
+            this.A0 = new System.Windows.Forms.Button();
+            this.C0 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // A2
             // 
-            this.button1.Location = new System.Drawing.Point(428, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(202, 182);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Press To Select";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.A2_Click);
+            this.A2.Location = new System.Drawing.Point(856, 23);
+            this.A2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.A2.Name = "A2";
+            this.A2.Size = new System.Drawing.Size(404, 350);
+            this.A2.TabIndex = 0;
+            this.A2.Text = "Press To Select";
+            this.A2.UseVisualStyleBackColor = true;
+            this.A2.Click += new System.EventHandler(this.A2_Click);
             // 
-            // button2
+            // B2
             // 
-            this.button2.Location = new System.Drawing.Point(428, 200);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(202, 177);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Press To Select";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.B2_Click);
+            this.B2.Location = new System.Drawing.Point(856, 385);
+            this.B2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.B2.Name = "B2";
+            this.B2.Size = new System.Drawing.Size(404, 340);
+            this.B2.TabIndex = 1;
+            this.B2.Text = "Press To Select";
+            this.B2.UseVisualStyleBackColor = true;
+            this.B2.Click += new System.EventHandler(this.B2_Click);
             // 
-            // button3
+            // C2
             // 
-            this.button3.Location = new System.Drawing.Point(428, 383);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(202, 171);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Press To Select";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.C2_Click);
+            this.C2.Location = new System.Drawing.Point(856, 737);
+            this.C2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.C2.Name = "C2";
+            this.C2.Size = new System.Drawing.Size(404, 329);
+            this.C2.TabIndex = 2;
+            this.C2.Text = "Press To Select";
+            this.C2.UseVisualStyleBackColor = true;
+            this.C2.Click += new System.EventHandler(this.C2_Click);
             // 
-            // button4
+            // A1
             // 
-            this.button4.Location = new System.Drawing.Point(220, 12);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(202, 182);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Press To Select";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.A1_Click);
+            this.A1.Location = new System.Drawing.Point(440, 23);
+            this.A1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.A1.Name = "A1";
+            this.A1.Size = new System.Drawing.Size(404, 350);
+            this.A1.TabIndex = 3;
+            this.A1.Text = "Press To Select";
+            this.A1.UseVisualStyleBackColor = true;
+            this.A1.Click += new System.EventHandler(this.A1_Click);
             // 
-            // button5
+            // B1
             // 
-            this.button5.Location = new System.Drawing.Point(220, 200);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(202, 177);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "Press To Select";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.B1_Click);
+            this.B1.Location = new System.Drawing.Point(440, 385);
+            this.B1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.B1.Name = "B1";
+            this.B1.Size = new System.Drawing.Size(404, 340);
+            this.B1.TabIndex = 4;
+            this.B1.Text = "Press To Select";
+            this.B1.UseVisualStyleBackColor = true;
+            this.B1.Click += new System.EventHandler(this.B1_Click);
             // 
-            // button6
+            // C1
             // 
-            this.button6.Location = new System.Drawing.Point(220, 383);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(202, 171);
-            this.button6.TabIndex = 5;
-            this.button6.Text = "Press To Select";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.C1_Click);
+            this.C1.Location = new System.Drawing.Point(440, 737);
+            this.C1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.C1.Name = "C1";
+            this.C1.Size = new System.Drawing.Size(404, 329);
+            this.C1.TabIndex = 5;
+            this.C1.Text = "Press To Select";
+            this.C1.UseVisualStyleBackColor = true;
+            this.C1.Click += new System.EventHandler(this.C1_Click);
             // 
-            // button7
+            // B0
             // 
-            this.button7.Location = new System.Drawing.Point(12, 200);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(202, 177);
-            this.button7.TabIndex = 6;
-            this.button7.Text = "Press To Select";
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.B0_Click);
+            this.B0.Location = new System.Drawing.Point(24, 385);
+            this.B0.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.B0.Name = "B0";
+            this.B0.Size = new System.Drawing.Size(404, 340);
+            this.B0.TabIndex = 6;
+            this.B0.Text = "Press To Select";
+            this.B0.UseVisualStyleBackColor = true;
+            this.B0.Click += new System.EventHandler(this.B0_Click);
             // 
-            // button8
+            // A0
             // 
-            this.button8.Location = new System.Drawing.Point(12, 12);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(202, 182);
-            this.button8.TabIndex = 7;
-            this.button8.Text = "Press To Select";
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.A0_Click);
+            this.A0.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.A0.Location = new System.Drawing.Point(24, 23);
+            this.A0.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.A0.Name = "A0";
+            this.A0.Size = new System.Drawing.Size(404, 350);
+            this.A0.TabIndex = 7;
+            this.A0.Text = "Press To Select";
+            this.A0.UseVisualStyleBackColor = true;
+            this.A0.Click += new System.EventHandler(this.A0_Click);
             // 
-            // button9
+            // C0
             // 
-            this.button9.Location = new System.Drawing.Point(12, 383);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(202, 171);
-            this.button9.TabIndex = 8;
-            this.button9.Text = "Press To Select";
-            this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.C0_Click);
+            this.C0.Location = new System.Drawing.Point(24, 737);
+            this.C0.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.C0.Name = "C0";
+            this.C0.Size = new System.Drawing.Size(404, 329);
+            this.C0.TabIndex = 8;
+            this.C0.Text = "Press To Select";
+            this.C0.UseVisualStyleBackColor = true;
+            this.C0.Click += new System.EventHandler(this.C0_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(645, 566);
-            this.Controls.Add(this.button9);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(1290, 1088);
+            this.Controls.Add(this.C0);
+            this.Controls.Add(this.A0);
+            this.Controls.Add(this.B0);
+            this.Controls.Add(this.C1);
+            this.Controls.Add(this.B1);
+            this.Controls.Add(this.A1);
+            this.Controls.Add(this.C2);
+            this.Controls.Add(this.B2);
+            this.Controls.Add(this.A2);
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Tic Tac Toe Game";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button A2;
+        private System.Windows.Forms.Button B2;
+        private System.Windows.Forms.Button C2;
+        private System.Windows.Forms.Button A1;
+        private System.Windows.Forms.Button B1;
+        private System.Windows.Forms.Button C1;
+        private System.Windows.Forms.Button A0;
+        private System.Windows.Forms.Button C0;
+        private System.Windows.Forms.Button B0;
     }
 }
 
