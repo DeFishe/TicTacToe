@@ -12,6 +12,8 @@ namespace Tic_Tac_Toe
 {
     public partial class Form1 : Form
     {
+        int turn = 0;
+
         public enum Player
         {
             X, O
@@ -26,16 +28,37 @@ namespace Tic_Tac_Toe
             InitializeComponent();
             resetGame();
         }
+
         private void Button_Click(object sender, EventArgs e)
         {
-            var button = (Button)sender; //Takes the Button which was sent to the method as a generic object and casts it back to a Button. Makes it so only one event is necessary.
-            currentPlayer = Player.X;
-            button.Text = currentPlayer.ToString();
-            button.Enabled = false;
-            buttons.Remove(button);
-            WinCheck();
-            AImoves.Start();
-          
+            if (radioButton1Clicked == true)
+            {
+                var button = (Button)sender; //Takes the Button which was sent to the method as a generic object and casts it back to a Button. Makes it so only one event is necessary.
+                currentPlayer = Player.X;
+                button.Text = currentPlayer.ToString();
+                button.Enabled = false;
+                buttons.Remove(button);
+                WinCheck();
+                AImoves.Start();
+            }
+            else
+            {
+                Button button = (Button)sender; //Takes the Button which was sent to the method as a generic object and casts it back to a Button. Makes it so only one event is necessary.
+                if (button.Text == "?")
+                {
+                    if (turn % 2 == 0)
+                    {
+                        button.Text = "X";
+                    }
+                    else
+                    {
+                        button.Text = "O";
+                    }
+                    WinCheck();
+                    turn++;
+                }
+
+            }
         }
 
         private void AImove(object sender, EventArgs e)
@@ -57,7 +80,6 @@ namespace Tic_Tac_Toe
 
         }
 
-
         private void restartGame(object sender, EventArgs e)
         {
             resetGame();
@@ -67,7 +89,6 @@ namespace Tic_Tac_Toe
         {
             buttons = new List<Button> { A0, A1, A2, B0, B1, B2, C0, C1, C2 };
         }
-
 
         private void resetGame()
         {
@@ -81,7 +102,6 @@ namespace Tic_Tac_Toe
             }
             buttonLoad();
         }
-
 
         private void WinCheck()
         {
@@ -115,6 +135,15 @@ namespace Tic_Tac_Toe
 
         private void fileToolStripMenuItem_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private bool radioButton1Clicked = false;
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            radioButton1Clicked = true;
+
 
         }
 
