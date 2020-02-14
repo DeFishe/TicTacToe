@@ -46,6 +46,7 @@
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.AImoves = new System.Windows.Forms.Timer(this.components);
+            this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -207,11 +208,22 @@
             // 
             this.AImoves.Tick += new System.EventHandler(this.AImove);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(282, 581);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(76, 48);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.restartGame);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(645, 581);
+            this.ClientSize = new System.Drawing.Size(645, 656);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.C0);
             this.Controls.Add(this.A0);
             this.Controls.Add(this.B0);
@@ -255,6 +267,7 @@
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.Timer AImoves;
+        private System.Windows.Forms.Button button1;
     }
 }
 

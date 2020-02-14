@@ -20,8 +20,6 @@ namespace Tic_Tac_Toe
         Player currentPlayer;
         List<Button>buttons;
         Random rand = new Random();
-        int playerWins = 0;
-        int computerWins = 0;
 
         public Form1()
         {
@@ -34,7 +32,6 @@ namespace Tic_Tac_Toe
             currentPlayer = Player.X;
             button.Text = currentPlayer.ToString();
             button.Enabled = false;
-            button.BackColor = System.Drawing.Color.Cyan;
             buttons.Remove(button);
             WinCheck();
             AImoves.Start();
@@ -49,7 +46,6 @@ namespace Tic_Tac_Toe
                 buttons[index].Enabled = false;
                 currentPlayer = Player.O;
                 buttons[index].Text = currentPlayer.ToString();
-                buttons[index].BackColor = System.Drawing.Color.DarkSalmon;
                 buttons.RemoveAt(index);
                 WinCheck();
                 AImoves.Stop();
