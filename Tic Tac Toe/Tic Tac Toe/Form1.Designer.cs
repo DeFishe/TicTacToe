@@ -50,9 +50,10 @@
             // 
             // A2
             // 
-            this.A2.Location = new System.Drawing.Point(428, 27);
+            this.A2.Location = new System.Drawing.Point(571, 33);
+            this.A2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.A2.Name = "A2";
-            this.A2.Size = new System.Drawing.Size(202, 182);
+            this.A2.Size = new System.Drawing.Size(269, 224);
             this.A2.TabIndex = 0;
             this.A2.Text = "Press To Select";
             this.A2.UseVisualStyleBackColor = true;
@@ -60,9 +61,10 @@
             // 
             // B2
             // 
-            this.B2.Location = new System.Drawing.Point(428, 215);
+            this.B2.Location = new System.Drawing.Point(571, 265);
+            this.B2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.B2.Name = "B2";
-            this.B2.Size = new System.Drawing.Size(202, 177);
+            this.B2.Size = new System.Drawing.Size(269, 218);
             this.B2.TabIndex = 1;
             this.B2.Text = "Press To Select";
             this.B2.UseVisualStyleBackColor = true;
@@ -70,9 +72,10 @@
             // 
             // C2
             // 
-            this.C2.Location = new System.Drawing.Point(428, 398);
+            this.C2.Location = new System.Drawing.Point(571, 490);
+            this.C2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.C2.Name = "C2";
-            this.C2.Size = new System.Drawing.Size(202, 171);
+            this.C2.Size = new System.Drawing.Size(269, 210);
             this.C2.TabIndex = 2;
             this.C2.Text = "Press To Select";
             this.C2.UseVisualStyleBackColor = true;
@@ -80,9 +83,10 @@
             // 
             // A1
             // 
-            this.A1.Location = new System.Drawing.Point(220, 27);
+            this.A1.Location = new System.Drawing.Point(293, 33);
+            this.A1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.A1.Name = "A1";
-            this.A1.Size = new System.Drawing.Size(202, 182);
+            this.A1.Size = new System.Drawing.Size(269, 224);
             this.A1.TabIndex = 3;
             this.A1.Text = "Press To Select";
             this.A1.UseVisualStyleBackColor = true;
@@ -90,9 +94,10 @@
             // 
             // B1
             // 
-            this.B1.Location = new System.Drawing.Point(220, 215);
+            this.B1.Location = new System.Drawing.Point(293, 265);
+            this.B1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.B1.Name = "B1";
-            this.B1.Size = new System.Drawing.Size(202, 177);
+            this.B1.Size = new System.Drawing.Size(269, 218);
             this.B1.TabIndex = 4;
             this.B1.Text = "Press To Select";
             this.B1.UseVisualStyleBackColor = true;
@@ -100,9 +105,10 @@
             // 
             // C1
             // 
-            this.C1.Location = new System.Drawing.Point(220, 398);
+            this.C1.Location = new System.Drawing.Point(293, 490);
+            this.C1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.C1.Name = "C1";
-            this.C1.Size = new System.Drawing.Size(202, 171);
+            this.C1.Size = new System.Drawing.Size(269, 210);
             this.C1.TabIndex = 5;
             this.C1.Text = "Press To Select";
             this.C1.UseVisualStyleBackColor = true;
@@ -110,9 +116,10 @@
             // 
             // B0
             // 
-            this.B0.Location = new System.Drawing.Point(12, 215);
+            this.B0.Location = new System.Drawing.Point(16, 265);
+            this.B0.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.B0.Name = "B0";
-            this.B0.Size = new System.Drawing.Size(202, 177);
+            this.B0.Size = new System.Drawing.Size(269, 218);
             this.B0.TabIndex = 6;
             this.B0.Text = "Press To Select";
             this.B0.UseVisualStyleBackColor = true;
@@ -120,10 +127,12 @@
             // 
             // A0
             // 
+            this.A0.AccessibleName = "A0";
             this.A0.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.A0.Location = new System.Drawing.Point(12, 27);
+            this.A0.Location = new System.Drawing.Point(16, 33);
+            this.A0.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.A0.Name = "A0";
-            this.A0.Size = new System.Drawing.Size(202, 182);
+            this.A0.Size = new System.Drawing.Size(269, 224);
             this.A0.TabIndex = 7;
             this.A0.Text = "Press To Select";
             this.A0.UseVisualStyleBackColor = true;
@@ -131,9 +140,10 @@
             // 
             // C0
             // 
-            this.C0.Location = new System.Drawing.Point(12, 398);
+            this.C0.Location = new System.Drawing.Point(16, 490);
+            this.C0.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.C0.Name = "C0";
-            this.C0.Size = new System.Drawing.Size(202, 171);
+            this.C0.Size = new System.Drawing.Size(269, 210);
             this.C0.TabIndex = 8;
             this.C0.Text = "Press To Select";
             this.C0.UseVisualStyleBackColor = true;
@@ -141,12 +151,13 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(645, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(860, 28);
             this.menuStrip1.TabIndex = 9;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -156,20 +167,21 @@
             this.newGameToolStripMenuItem,
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 24);
             this.fileToolStripMenuItem.Text = "File";
             this.fileToolStripMenuItem.Click += new System.EventHandler(this.fileToolStripMenuItem_Click);
             // 
             // newGameToolStripMenuItem
             // 
             this.newGameToolStripMenuItem.Name = "newGameToolStripMenuItem";
-            this.newGameToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
+            this.newGameToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.newGameToolStripMenuItem.Text = "New Game";
+            this.newGameToolStripMenuItem.Click += new System.EventHandler(this.newGameToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -178,26 +190,27 @@
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.aboutToolStripMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(55, 24);
             this.helpToolStripMenuItem.Text = "Help";
             // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(133, 26);
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // contextMenuStrip1
             // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(645, 581);
+            this.ClientSize = new System.Drawing.Size(860, 715);
             this.Controls.Add(this.C0);
             this.Controls.Add(this.A0);
             this.Controls.Add(this.B0);
@@ -209,6 +222,7 @@
             this.Controls.Add(this.A2);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.ShowIcon = false;

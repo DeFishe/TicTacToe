@@ -61,13 +61,70 @@ namespace Tic_Tac_Toe
             {
                 if (turn % 2 == 0)
                 {
-                    MessageBox.Show("Xs wins the game!");
+                    string message = "Would you like to play again?";
+                    string title = "X's have won the game!";
+                    MessageBoxButtons buttons = MessageBoxButtons.YesNo;
+                    DialogResult result = MessageBox.Show(message, title, buttons);
+                    if (result == DialogResult.No)
+                    {
+                        this.Close();
+                    }
+                    else
+                    {
+                        // reset
+                        for (int i = 0; i < this.Controls.Count; i++)
+                        {
+                            foreach (Control control in Controls)
+                            {
+                                Button button = (Button)control;
+                                A0.Text = "Press to select";
+                                A1.Text = "Press to select";
+                                A2.Text = "Press to select";
+                                B0.Text = "Press to select";
+                                B1.Text = "Press to select";
+                                B2.Text = "Press to select";
+                                C0.Text = "Press to select";
+                                C1.Text = "Press to select";
+                                C2.Text = "Press to select";
+                            }
+                            winState = false;
+                        }
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("Os wins the game!");
+                    string message = "Would you like to play again?";
+                    string title = "O's have won the game!";
+                    MessageBoxButtons buttons = MessageBoxButtons.YesNo;
+                    DialogResult result = MessageBox.Show(message, title, buttons);
+                    if (result == DialogResult.No)
+                    {
+                        this.Close();
+                    }
+                    else
+                    {
+                        // reset
+                        for (int i = 0; i < this.Controls.Count; i++)
+                        {
+                            foreach (Control control in Controls)
+                            {
+                                Button button = (Button)control;
+                                A0.Text = "Press to select";
+                                A1.Text = "Press to select";
+                                A2.Text = "Press to select";
+                                B0.Text = "Press to select";
+                                B1.Text = "Press to select";
+                                B2.Text = "Press to select";
+                                C0.Text = "Press to select";
+                                C1.Text = "Press to select";
+                                C2.Text = "Press to select";
+                            }
+                            winState = false;
+                        }
+
+                    }
                 }
-                try
+               /** try
                 {
                     foreach (Control control in Controls)
                     {
@@ -75,7 +132,7 @@ namespace Tic_Tac_Toe
                         button.Enabled = false; //Disables all buttons after a winner is declared. Need to set to true when starting new game.
                     }
                 }
-                catch { }
+                catch { }  **/
             }
         }
 
@@ -92,6 +149,11 @@ namespace Tic_Tac_Toe
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void newGameToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }
