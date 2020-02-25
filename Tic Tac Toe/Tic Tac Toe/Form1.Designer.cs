@@ -45,6 +45,9 @@
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.AImoves = new System.Windows.Forms.Timer(this.components);
+            this.button1 = new System.Windows.Forms.Button();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -54,7 +57,8 @@
             this.A2.Name = "A2";
             this.A2.Size = new System.Drawing.Size(202, 182);
             this.A2.TabIndex = 0;
-            this.A2.Text = "Press To Select";
+            this.A2.Tag = "play";
+            this.A2.Text = "?";
             this.A2.UseVisualStyleBackColor = true;
             this.A2.Click += new System.EventHandler(this.Button_Click);
             // 
@@ -64,7 +68,8 @@
             this.B2.Name = "B2";
             this.B2.Size = new System.Drawing.Size(202, 177);
             this.B2.TabIndex = 1;
-            this.B2.Text = "Press To Select";
+            this.B2.Tag = "play";
+            this.B2.Text = "?";
             this.B2.UseVisualStyleBackColor = true;
             this.B2.Click += new System.EventHandler(this.Button_Click);
             // 
@@ -74,7 +79,8 @@
             this.C2.Name = "C2";
             this.C2.Size = new System.Drawing.Size(202, 171);
             this.C2.TabIndex = 2;
-            this.C2.Text = "Press To Select";
+            this.C2.Tag = "play";
+            this.C2.Text = "?";
             this.C2.UseVisualStyleBackColor = true;
             this.C2.Click += new System.EventHandler(this.Button_Click);
             // 
@@ -84,7 +90,8 @@
             this.A1.Name = "A1";
             this.A1.Size = new System.Drawing.Size(202, 182);
             this.A1.TabIndex = 3;
-            this.A1.Text = "Press To Select";
+            this.A1.Tag = "play";
+            this.A1.Text = "?";
             this.A1.UseVisualStyleBackColor = true;
             this.A1.Click += new System.EventHandler(this.Button_Click);
             // 
@@ -94,7 +101,8 @@
             this.B1.Name = "B1";
             this.B1.Size = new System.Drawing.Size(202, 177);
             this.B1.TabIndex = 4;
-            this.B1.Text = "Press To Select";
+            this.B1.Tag = "play";
+            this.B1.Text = "?";
             this.B1.UseVisualStyleBackColor = true;
             this.B1.Click += new System.EventHandler(this.Button_Click);
             // 
@@ -104,7 +112,8 @@
             this.C1.Name = "C1";
             this.C1.Size = new System.Drawing.Size(202, 171);
             this.C1.TabIndex = 5;
-            this.C1.Text = "Press To Select";
+            this.C1.Tag = "play";
+            this.C1.Text = "?";
             this.C1.UseVisualStyleBackColor = true;
             this.C1.Click += new System.EventHandler(this.Button_Click);
             // 
@@ -114,7 +123,8 @@
             this.B0.Name = "B0";
             this.B0.Size = new System.Drawing.Size(202, 177);
             this.B0.TabIndex = 6;
-            this.B0.Text = "Press To Select";
+            this.B0.Tag = "play";
+            this.B0.Text = "?";
             this.B0.UseVisualStyleBackColor = true;
             this.B0.Click += new System.EventHandler(this.Button_Click);
             // 
@@ -125,7 +135,8 @@
             this.A0.Name = "A0";
             this.A0.Size = new System.Drawing.Size(202, 182);
             this.A0.TabIndex = 7;
-            this.A0.Text = "Press To Select";
+            this.A0.Tag = "play";
+            this.A0.Text = "?";
             this.A0.UseVisualStyleBackColor = true;
             this.A0.Click += new System.EventHandler(this.Button_Click);
             // 
@@ -135,7 +146,8 @@
             this.C0.Name = "C0";
             this.C0.Size = new System.Drawing.Size(202, 171);
             this.C0.TabIndex = 8;
-            this.C0.Text = "Press To Select";
+            this.C0.Tag = "play";
+            this.C0.Text = "?";
             this.C0.UseVisualStyleBackColor = true;
             this.C0.Click += new System.EventHandler(this.Button_Click);
             // 
@@ -193,11 +205,39 @@
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
+            // AImoves
+            // 
+            this.AImoves.Tick += new System.EventHandler(this.AImove);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(282, 581);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(76, 48);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "Restart Game";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.restartGame);
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(282, 4);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(85, 17);
+            this.radioButton1.TabIndex = 11;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Vs Computer";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(645, 581);
+            this.ClientSize = new System.Drawing.Size(645, 656);
+            this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.C0);
             this.Controls.Add(this.A0);
             this.Controls.Add(this.B0);
@@ -213,7 +253,7 @@
             this.Name = "Form1";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Tic Tac Toe Game";
+            this.Text = "5";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -240,6 +280,9 @@
         private System.Windows.Forms.ToolStripMenuItem newGameToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
+        private System.Windows.Forms.Timer AImoves;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.RadioButton radioButton1;
     }
 }
 
